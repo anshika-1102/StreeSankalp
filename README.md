@@ -1,4 +1,4 @@
-# StreeSankalp
+# <img src="images/StreeSankalp.png" width="80" height="80"> StreeSankalp
 
 **StreeSankalp** is a comprehensive platform designed to provide support to victims and survivors of gender-based violence (GBV), sexual abuse, domestic abuse, child marriage, and other traumatic events. It aims to offer safe, accessible, and effective resources to individuals in need of help.
 
@@ -65,9 +65,9 @@ Once the application is set up, you can interact with the platform via its web i
 ## Future Scope
 The platform is continually evolving. Future enhancements include:
 
-1. Mobile Application: A mobile app to make the platform more accessible, with offline features and notifications.
-2. Case Reporting and Tracking: A feature for users to submit cases with detailed reports and track their case status through the platform.
-3. Data Analytics: Implementing analytics to gather data on abuse trends, allowing organizations to better understand the needs and challenges faced by survivors.
-4. Peer Support Groups: Extending the community support feature to include peer-to-peer support groups with group chat options.
-5. Secure Document Sharing: Allow survivors to share documents securely with NGOs or support agencies.
-6. Real-Time Video Consultations: Providing the option for real-time video consultations with therapists, legal professionals, and social workers.
+1. **Mobile Application**: A mobile app to make the platform more accessible, with offline features and notifications.
+2. **Case Reporting and Tracking**: A feature for users to submit cases with detailed reports and track their case status through the platform.
+3. **Data Analytics**: Implementing analytics to gather data on abuse trends, allowing organizations to better understand the needs and challenges faced by survivors.
+4. **Peer Support Groups**: Extending the community support feature to include peer-to-peer support groups with group chat options.
+5. **Secure Document Sharing**: Allow survivors to share documents securely with NGOs or support agencies.
+6. **Real-Time Video Consultations**: Providing the option for real-time video consultations with therapists, legal professionals, and social workers.
