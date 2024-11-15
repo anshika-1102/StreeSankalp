@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>StreeSankalp</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top px-0">
+            <div class="container px-0">
+                <div class="topbar">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="topbar-info d-flex flex-wrap">
+                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>StreeSankalp@gmail.com</a>
+                                <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+01234567890</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="topbar-icon d-flex align-items-center justify-content-end">
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-light bg-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand ms-3" style="display: flex; align-items: center; text-decoration: none;">
+                        <a href="index.html" class="navbar-brand ms-3" style="display: flex; align-items: center; text-decoration: none;">
+                            <img src="images/StreeSankalp.png" alt="logo" width="40px" height="40px" style="margin-right: 10px;">
+                            <h1 class="text-primary display-5" style="margin: 0; font-size: 30px;">StreeSankalp</h1>
+                        </a>
+                        
+                    </a>
+                    <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="reporting.html" class="nav-item nav-link">Reporting</a>
+                            <a href="helpline.html" class="nav-item nav-link ">Help Line</a>
+                            <a href="location.html" class="nav-item nav-link">Location</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        
+       <!-- Carousel Start -->
+        <div class="container-fluid carousel-header vh-100 px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="images\7_home.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">"Empowering Women for a Safer, Thriving Future"</h4>
+                                <h1 class="display-1 text-capitalize text-white mb-4">"Safety is a Right, Not a Privilege"</h1>
+                                <p class="mb-5 fs-5">"Safety and security don't just happen; they are the result of collective consensus and public investment." – Jesse Jackson 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\9_home.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">"Empowering Women for a Safer, Thriving Future"</h4>
+                                <h1 class="display-1 text-capitalize text-white mb-4">"Empower Her Voice, Empower Her Choice"</h1>
+                                <p class="mb-5 fs-5">"The most common way people give up their power is by thinking they don’t have any." – Alice Walker 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\2_home.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">"Empowering Women for a Safer, Thriving Future"</h4>
+                                <h1 class="display-1 text-capitalize text-white mb-4">"When Women Rise, Communities Thrive"</h1>
+                                <p class="mb-5 fs-5"> "There is no limit to what we, as women, can accomplish." – Michelle Obama 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about  py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-5">
+                        <div class="h-100">
+                            <img src="images\3_w.png" class="img-fluid w-100 h-100" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <h5 class="text-uppercase text-primary">About Us</h5>
+                        <h1 class="mb-4">Dedicated to unleashing the strength, resilience, and potential of every woman.</h1>
+                        <p class="fs-5 mb-4">Our mission-driven platform is dedicated to creating a safer and more empowering world for women. By leveraging advanced technologies and community-driven initiatives, we aim to foster environments where women feel safe, supported, and valued. We believe in the power of technology, community, and information to drive real change, ensuring that every woman has the tools and resources needed to thrive with confidence and resilience.
+                        </p>
+                        <div class="tab-class bg-secondary p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 text-center bg-white active" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 150px;">About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 mx-3 text-center bg-white" data-bs-toggle="pill" href="#tab-2">
+                                        <span class="text-dark" style="width: 150px;">Mission</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 text-center bg-white" data-bs-toggle="pill" href="#tab-3">
+                                        <span class="text-dark" style="width: 150px;">Vision</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Empowering Women, Enhancing Safety.</h5>
+                                                    <p class="mb-4">Our mission-driven platform is dedicated to creating a safer and more empowering world for women. By leveraging advanced technologies and community-driven initiatives, we aim to foster environments where women feel safe, supported, and valued. We believe in the power of technology, community, and information to drive real change, ensuring that every woman has the tools and resources needed to thrive with confidence and resilience.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane fade show p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Protecting Today, Empowering Tomorrow.</h5>
+                                                    <p class="mb-4">To protect, empower, and inspire women by providing innovative safety solutions and resources that enhance personal security, build awareness, and foster a global community dedicated to supporting women’s rights and well-being. Through proactive safety analytics, real-time monitoring, and community engagement, we aim to make every space a safe space for women.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-3" class="tab-pane fade show p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">A Safe World for Every Woman, Everywhere.</h5>
+                                                    <p class="mb-4">A world where every woman feels safe, empowered, and free to pursue her dreams without fear or limitations. Our vision is to create a global impact, breaking down societal barriers and ensuring that every woman has access to the tools, support, and opportunities to realize her full potential in a world that values her safety and empowerment.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- chatbot-  -->
+        <div class="container-fluid service py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                    <h5 class="text-uppercase text-primary">Sanjivani - Your Guide</h5>
+                    <h1 class="mb-0">Your own assistant</h1>
+                </div>
+
+                <div style="max-width: 800px; margin: auto; padding: 20px;">
+                    <iframe
+                        allow="microphone;"
+                        width="100%"
+                        height="430"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/e4be71e7-c22b-4459-8944-045bea7ef05e"
+                        style="border: none; border-radius: 8px;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Start -->
+        <div class="container-fluid service py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                    <h5 class="text-uppercase text-primary">What we do</h5>
+                    <h1 class="mb-0">How We Make a Difference !!!</h1>
+                </div>
+                <div class="row g-4">
+                   
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="service-item">
+                            <img src="images\1_p.avif" class="img-fluid service-img" >
+                            <div class="service-link">
+                                <a href="#" class="h3 mb-0">Anonymous Reporting <br>
+                                    <br>
+                                    <h5>Enables users to report incidents or concerns without revealing their identity, ensuring privacy and encouraging more women to come forward without fear.</h5> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="service-item">
+                            <img src="images\2_p.jpg" class="img-fluid service-img" >
+                            <div class="service-link">
+                                <a href="#" class="h3 mb-0">Movement Monitoring <br>
+                                    <br>
+                                    <h5>Tracks user's movements in real-time, providing alerts to selected contacts if unusual activity is detected, enhancing safety during travel or in unfamiliar areas.</h5> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="service-item">
+                            <img src="images\3_p.jpg" class="img-fluid service-img" >
+                            <div class="service-link">
+                                <a href="#" class="h3 mb-0">Chatbot Assistance <br>
+                                    <br>
+                                    <h5>Offers instant support and information via an AI-powered chatbot, guiding users through safety tips, emergency contacts, and support resources tailored to their needs.</h5> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>    
+                  
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="service-item">
+                            <img src="images\4_p.jpg" class="img-fluid service-img" >
+                            <div class="service-link">
+                                <a href="#" class="h3 mb-0">Fake Video Calling <br>
+                                    <br>
+                                    <h5>Allows users to simulate a live video call, deterring potential threats by creating the impression of being engaged and supervised, especially useful in uncomfortable situations.</h5> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+    
+        <!-- Events Start -->
+        <div class="container-fluid event py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <h5 class="text-uppercase text-primary">Workshops</h5>
+                    <h1 class="mb-0">Strengthen today, for a future where every woman stands empowered and safe.</h1>
+                </div>
+                <div class="event-carousel owl-carousel">
+                    <div class="event-item">
+                        <!-- Embedded Video in place of Image -->
+                        <iframe src="https://www.youtube.com/embed/ZUrr5MU4Z4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="event-content p-4">
+                            <h4 class="mb-4">Self Defence Course</h4>
+                            <a class="btn-hover-bg btn btn-secondary text-white py-2 px-4 mt-2" href="https://www.youtube.com/watch?v=ZUrr5MU4Z4Y" target="_blank"></a>
+                        </div>
+                    </div>
+                  
+                    
+                    <div class="event-item">
+                        <!-- Embedded Video in place of Image -->
+                        <iframe src="https://www.youtube.com/embed/playlist?list=PLLALQuK1NDrhbNpRSUEAloceyNEMzcKzN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="event-content p-4">
+                            <h4 class="mb-4">Krav Maga Self Defence </h4>
+                            <a class="btn-hover-bg btn btn-secondary text-white py-2 px-4 mt-2" href="https://www.youtube.com/playlist?list=PLLALQuK1NDrhbNpRSUEAloceyNEMzcKzN" target="_blank"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item">
+                        <!-- Embedded Video in place of Image -->
+                        <iframe src="https://www.youtube.com/embed/K5UO9zA3GK4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="event-content p-4">
+                            <h4 class="mb-4">Basic Self Defence Techniques</h4>
+                            <a class="btn-hover-bg btn btn-secondary text-white py-2 px-4 mt-2" href="https://www.youtube.com/watch?v=K5UO9zA3GK4&list=PLLALQuK1NDrigB-xTBLJV4vZwOXfxbPnM" target="_blank"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item">
+                        <!-- Embedded Video in place of Image -->
+                        <iframe src="https://www.youtube.com/embed/wCj0IfpFjqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="event-content p-4">
+                            <h4 class="mb-4">Brazilian Jiu-Jitsu</h4>
+                            <a class="btn-hover-bg btn btn-secondary text-white py-2 px-4 mt-2" href="https://www.youtube.com/watch?v=wCj0IfpFjqY&list=PLyknAhj6gPvJ9--yUmi94O7G444R_ikCF" target="_blank"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item">
+                        <!-- Embedded Video in place of Image -->
+                        <iframe src="https://www.youtube.com/embed/mTXWn3D9YBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="event-content p-4">
+                            <h4 class="mb-4">Self Defence Techniques</h4>
+                            <a class="btn-hover-bg btn btn-secondary text-white py-2 px-4 mt-2" href="https://www.youtube.com/watch?v=mTXWn3D9YBI&list=PLh9pagEYeBrYfi_3KtvopooJi1swvHdVE" target="_blank"></a>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <!-- Events End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5 mb-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                    <h5 class="text-uppercase text-primary">Latest News</h5>
+                    <h1 class="mb-0">Help today because tomorrow you may be the one who needs more helping!
+                    </h1>
+                </div>
+                <div class="row g-4">
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\1.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Late 19th - Early 20th Century</span> 
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\1.jpg" data-lightbox="Blog-1" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The Suffragette Movement</h4>
+                                <p class="mb-4">Fought for women's right to vote, with key figures like Susan B. Anthony, Elizabeth Cady Stanton, and Emmeline Pankhurst.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\2.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 1960s-1980s</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\2.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The Women's Liberation Movement</h4>
+                                <p class="mb-4">Advocated for equality in all aspects of life, including reproductive rights, workplace equality, and sexual liberation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\3.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 2017-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\3.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The #MeToo Movement</h4>
+                                <p class="mb-4">A social movement against sexual harassment and assault, empowering women to speak out about their experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\4.jpeg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Multiple Waves, 19th Century-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\4.jpeg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The Feminist Movement</h4>
+                                <p class="mb-4">Advocated for equal rights for women in various areas, including legal rights, reproductive rights, and ending gender discrimination.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\5.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 2017-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\5.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The Women's March</h4>
+                                <p class="mb-4">A global movement advocating for women's rights, including issues such as reproductive rights, LGBTQIA+ rights, and racial justice.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\6.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Late 20th Century-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\6.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">Girls' Education Movement</h4>
+                                <p class="mb-4">Focused on advocating for education for girls around the world, ensuring they have equal access to schooling and educational resources.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\7.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 1960s-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\7.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">Reproductive Rights Movement</h4>
+                                <p class="mb-4">Focuses on advocating for women's rights to make decisions about their reproductive health, including birth control, abortion, and maternity leave</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\8.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Ongoing</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\8.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The International Day for the Elimination of Violence Against Women (Orange Day)</h4>
+                                <p class="mb-4">A global campaign to raise awareness about violence against women and girls, advocating for legal reforms and social changes to protect them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\9.jpeg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 2014-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\9.jpeg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The HeForShe Campaign</h4>
+                                <p class="mb-4">A solidarity movement initiated by UN Women to engage men and boys in achieving gender equality, emphasizing that gender equality benefits all.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\10.jpg" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 2018-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\10.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">Time's Up Movement</h4>
+                                <p class="mb-4">A movement to combat workplace sexual harassment and gender inequality, particularly in the entertainment industry, with legal advocacy and a fund to support survivors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\11.webp" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 2013-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\11.webp" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">#BlackLivesMatter and Womens Rights</h4>
+                                <p class="mb-4">A movement that highlights the intersectionality of race and gender, focusing on issues of police brutality, racial inequality, and the unique struggles faced by Black women/</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="images\new_img\12.webp" class="img-fluid w-100" alt="">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> 2014-Present</span>
+                                </div>
+                                <div class="search-icon">
+                                    <a href="images\new_img\12.webp" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 ">
+                                <h4 class="mb-4">The #BringBackOurGirls Movement</h4>
+                                <p class="mb-4">Focused on the kidnapping of 276 schoolgirls by Boko Haram in Nigeria, this movement advocates for the safe return of abducted girls and women globally.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark text-body py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">Newsletter</h4>
+                            <p class="mb-4">Empowering Women for a Safer, Thriving Future</p>
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Our Services</h4>
+                            <a href="reporting.html"><i class="fas fa-angle-right me-2"></i> Anonymous Reporting</a>
+                            <a href="helpline.html"><i class="fas fa-angle-right me-2"></i> HelpLine</a>
+                            <a href="location.html"><i class="fas fa-angle-right me-2"></i> Location</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Workshops</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Chatbot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>StreeSankalp</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-body">
+                        Designed By Anamika Ratna and Anshika Rewliya
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
